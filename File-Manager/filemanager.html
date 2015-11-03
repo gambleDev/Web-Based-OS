@@ -1,0 +1,35 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="filemanager.css">
+</head>
+<body>
+	<table style='width: 100%; height: 100%;'>
+		<tr>
+			<td width='25%' style='vertical-align: top; border-right: 1px solid black;'>
+				<a onclick="switchTab('app')">
+					<div class='menuLink'>
+						Applications
+					</div>
+				</a>
+				
+				<a onclick="switchTab('files')">
+					<div class='menuLink'>
+						Files
+					</div>
+				</a>
+			</td>
+			<td width='75%' style='vertical-align: top;'>
+				<table width='100%' id='fileTable'>
+					<tr>
+						<th width='50%' style='border-bottom: 1px solid black;'>File Name</th>
+						<th width='25%' style='border-bottom: 1px solid black;'>Path</th>
+						<th width='25%' style='border-bottom: 1px solid black;'>Type</th>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+<script src="filemanager.js"></script>
+</html>

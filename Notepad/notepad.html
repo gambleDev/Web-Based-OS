@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="notepad.css">
+	</head>
+	<body onload="resizeTextArea()" onresize="resizeTextArea()"> 
+		<div id="toolbar"><div style="float: left;" class="button" onclick="save()">Save</div>
+							<div style="float: left; margin-left: 5px;" class="button" onclick="openFile()">Open</div>
+							<span style="float: right;" id="messageCenter"></span>
+		</div>
+		<div id="fileSelect"></div>
+		<textarea id="note" style="resize: none;width: 100%;"></textarea>
+
+		<script type="text/javascript" src="notepad.js"></script>
+	</body>
+</html>

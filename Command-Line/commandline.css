@@ -1,0 +1,48 @@
+*{
+	box-sizing: border-box;
+	transition: .4s;
+}
+
+body{
+	background: #000;
+	color: white;
+	margin: 0;
+}
+
+::-moz-selection{
+	background: none;
+}
+
+::selection{
+	background: none;
+}
+
+#console{
+	padding: 2px;
+}
+
+p{
+	margin: 0;
+	line-height: 20px;
+	font-size: 16px;
+}
+
+p.input{
+	overflow: hidden;
+	overflow-wrap:  break-word;
+}
+
+p.input:before{
+	content: 'localStorage:~$ ';
+}
+
+p#active-input:after{
+	;content:'|';
+	animation: blink 2s steps(1) infinite;
+}
+
+@keyframes blink{
+	50%{
+		color: transparent;
+	}
+}
